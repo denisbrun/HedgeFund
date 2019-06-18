@@ -10,18 +10,18 @@
   <script src="https://kit.fontawesome.com/bbd9ee6682.js"></script>
   <title>Hedge Fund | Invest in Yourself </title>
 </head>
-<body class="home">
+<body id="homeSection">
   <!-- Navigation Bar -->
   <nav id="navigationBar">
-    <h1 class="logo"> <a href="#home">
+    <h1 class="logo"> <a href="#homeSection">
       <span class="textColorPrimary">
       <i class="fa fa-book-open"></i> Hedge
       </span>Fund</a></h1>
     <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#what">What</a></li>
-      <li><a href="#who">Who</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#homeSection">Home</a></li>
+      <li><a href="#whatSection">What</a></li>
+      <li><a href="#whoSection">Who</a></li>
+      <li><a href="#contactSection">Contact</a></li>
     </ul>
   </nav>
   <!-- Showcase -->
@@ -91,5 +91,45 @@
       </div>
     </div>
   </section>
+
+  <!-- Contact Section -->
+  <section id="contactSection">
+    <div class="contactForm backgroundPrimary padding2">
+      <h2 class="headingMedium"><span class="textColorDark">Contact</span> Us</h2>
+      <p>Please use the form below to get in touch</p>
+      <form>
+        <div class="formGroup">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Name">
+        </div>
+        <div class="formGroup">
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email" placeholder="Email Address">
+        </div>
+        <div class="formGroup">
+          <label for="phone">Phone Number</label>
+          <input type="text" name="phone" id="phone" placeholder="Phone Number">
+        </div>
+        <div class="formGroup">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" placeholder="Message"></textarea>
+        </div>
+        <div>
+          <input type="submit" value="Send" class="button buttonDark">
+        </div>
+      </form>
+    </div>
+    <div class="contactMap">
+    </div>
+  </section>
+  <footer id="footer" class="backgroundDark textCenter paddingY1">
+    <div class="container">
+      <p>Copyright &copy; 2019, Hedge Fund, All Rights Reserved</p>
+    </div>
+    </footer>
+
+  <script src="./js/main.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBt8uTxDcIvwhZHYlmIqmgZNqbRgjp6qwY&callback=initMap"
+    async defer></script>
 </body>
 </html>

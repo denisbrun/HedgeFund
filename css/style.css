@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -35,6 +39,10 @@ p {
   color: #9AC7D9;
 }
 
+.textColorDark{
+  color: #2E4559;
+}
+
 .headingLarge {
   font-size: 4rem;
   margin-bottom: 0.75rem;
@@ -49,12 +57,18 @@ p {
 
 .backgroundLight{ 
   background: #f4f4f4;
-  color: #2E4559
+  color: #2E4559;
 
 }
+
 .backgroundDark{ 
   background: #2E4559; 
-  color: #f4f4f4
+  color: #f4f4f4;
+}
+
+.backgroundPrimary{ 
+  background: #6B9FBF; 
+  color: #f4f4f4;
 }
 
 .lead {
@@ -76,6 +90,10 @@ p {
   color: #6B9FBF;
 }
 
+.buttonDark:hover {
+  background:#9AC7D9;
+  color: #2E4559;
+}
 .buttonDark {
   background:#2E4559;
   color: #6B9FBF;
@@ -141,7 +159,7 @@ p {
 }
 
 #showcase .showcaseContent {
-  display: flex;
+  display: flex;  
   flex-direction: column;
   justify-content: center;
   text-align: center;
@@ -201,4 +219,29 @@ p {
   display: block;
   margin: auto;
   width: 60%;
+}
+
+/* Contact Us Section */
+
+#contactSection {
+  display: flex;
+}
+
+#contactSection .contactForm,
+#contactSection .contactMap {
+  flex: 1;
+}
+
+#contactSection .contactForm .formGroup {
+  margin: 0.75rem;
+}
+
+#contactSection .contactForm label {
+  display: block;
+}
+
+#contactSection .contactForm input,
+#contactSection .contactForm textarea  {
+  width: 100%;
+  padding: 0.5rem;
 }
