@@ -4,10 +4,134 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta >
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+  <link rel="stylesheet" media="screen and (min-width: 1100px)" href="css/widescreen.css">
+  <script src="https://kit.fontawesome.com/bbd9ee6682.js"></script>
   <title>Hedge Fund | Invest in Yourself </title>
 </head>
-<body>
-  
+<body id="homeSection">
+  <!-- Navigation Bar -->
+  <nav id="navigationBar">
+    <h1 class="logo"> <a href="#homeSection">
+      <span class="textColorPrimary">
+      <i class="fa fa-book-open"></i> HEDGE</span>Fund</a></h1>
+    <ul>
+      <li><a href="#homeSection">Home</a></li>
+      <li><a href="#whatSection">What</a></li>
+      <li><a href="#whoSection">Who</a></li>
+      <li><a href="#contactSection">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- Showcase -->
+  <header id="showcase">
+    <div class="showcaseContent">
+      <h1 class="headingLarge">
+        Time to Invest in Yourself
+      </h1>
+      <p class="lead">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint incidunt praesentium maxime distinctio dolore beatae, quaerat necessitatibus molestias itaque reprehenderit, laudantium debitis deleniti? Blanditiis, accusantium! Expedita maiores quasi eaque placeat!
+      </p>
+      <a href="#what" class="button">FIND OUT HOW</a>
+    </div>
+  </header>
+  <!-- What we do section -->
+  <section id="whatSection" class="backgroundLight paddingY1">
+    <div class="container">
+      <h2 class="headingMedium textCenter"><span class="textColorPrimary">What</span> We Do</h2>
+      <div class="items">
+        <div class="item">
+          <i class="fas fa-university fa-2x"></i>
+          <div><h3>Investments</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, sit.</p>
+          </div>
+        </div>
+        <div class="item">
+          <i class="fas fa-book-reader fa-2x"></i>
+          <div><h3>Portfolio</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, sit.</p>
+          </div>
+        </div>
+        <div class="item">
+          <i class="fas fa-pencil-alt fa-2x"></i>
+          <div><h3>Results</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, sit.</p>
+         </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who we are Section -->
+  <section id="whoSection">
+    <div class="whoImage"></div>
+    <div class="whoText backgroundDark padding2">
+      <h2 class="headingMedium"><span class="textColorPrimary">Who</span> We are</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nam illum dolorem dolor suscipit, vel culpa. Adipisci, aliquid corporis voluptates amet nemo fugit animi repellendus iure esse voluptatibus! Amet, asperiores?</p>
+      <h3>Our Team</h3>
+      <ul class="list">
+        <li>Lily Cortez: Chief Executive Officer</li>
+        <li>Audrey Lynn: Chief Financial Officer</li>
+        <li>James Codray: Lead Investments Manager</li>
+        <li>Janet Hymn: Lead Accountant</li>
+        <li>Gwen Jensen: Senior Risk Assement</li>
+      </ul>
+    </div>
+  </section>
+  <!-- Our Clients Section -->
+  <section id="clientsSection" class="padding1">
+    <div class="container">
+      <h2 class="headingMedium textCenter">
+        <span class="textColorPrimary">Our</span> Clients
+      </h2>
+      <div class="items paddingY1">
+        <div><img src="./img/logos/logo1.png" alt="client1"></div>
+        <div><img src="./img/logos/logo2.png" alt="client2"></div>
+        <div><img src="./img/logos/logo3.png" alt="client3"></div>
+        <div><img src="./img/logos/logo4.png" alt="client5"></div>
+        <div><img src="./img/logos/logo5.png" alt="client5"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contactSection">
+    <div class="contactForm backgroundPrimary padding2">
+      <h2 class="headingMedium"><span class="textColorDark">Contact</span> Us</h2>
+      <p>Please use the form below to get in touch</p>
+      <form>
+        <div class="formGroup">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Name">
+        </div>
+        <div class="formGroup">
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email" placeholder="Email Address">
+        </div>
+        <div class="formGroup">
+          <label for="phone">Phone Number</label>
+          <input type="text" name="phone" id="phone" placeholder="Phone Number">
+        </div>
+        <div class="formGroup">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" placeholder="Message"></textarea>
+        </div>
+        <div>
+          <input type="submit" value="Send" class="button buttonDark">
+        </div>
+      </form>
+    </div>
+    <div class="contactMap">
+    </div>
+  </section>
+  <footer id="footer" class="backgroundDark textCenter paddingY1">
+    <div class="container">
+      <p>Copyright &copy; 2019, Hedge Fund, All Rights Reserved</p>
+    </div>
+    </footer>
+
+  <script src="./js/main.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBt8uTxDcIvwhZHYlmIqmgZNqbRgjp6qwY&callback=initMap"
+    async defer></script>
 </body>
 </html>

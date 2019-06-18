@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+/* Utility Classes */
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.textColorPrimary {
+  color: #9AC7D9;
+}
+
+.textColorDark{
+  color: #2E4559;
+}
+
+.headingLarge {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.headingMediun {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.backgroundLight{ 
+  background: #f4f4f4;
+  color: #2E4559;
+
+}
+
+.backgroundDark{ 
+  background: #2E4559; 
+  color: #f4f4f4;
+}
+
+.backgroundPrimary{ 
+  background: #6B9FBF; 
+  color: #f4f4f4;
+}
+
+.lead {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.button {
+  font-size: 1.4rem;
+  color: #fff;
+  background: #9AC7D9;
+  padding: .7rem 2rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.button:hover {
+  background:#2E4559;
+  color: #6B9FBF;
+}
+
+.buttonDark:hover {
+  background:#9AC7D9;
+  color: #2E4559;
+}
+.buttonDark {
+  background:#2E4559;
+  color: #6B9FBF;
+}
+
+.paddingY1 { padding: 1.5rem 0; }
+.paddingY2 { padding: 2rem 0; }
+.paddingY3 { padding: 3rem 0; }
+
+.padding1 { padding: 1.5rem }
+.padding2 { padding: 2rem }
+.padding3 { padding: 3rem }
+
+.list {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #6B9FBF solid 1px;
+}
+
+/* Navigation Bar */
+#navigationBar {
+  display: flex;
+  position: sticky;
+  top:0;
+  background:#012340;
+  color: #fff;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+}
+
+#navigationBar h1 a {
+  cursor: pointer;
+  color: #fff;
+}
+
+#navigationBar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  
+}
+
+#navigationBar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+}
+#navigationBar ul li a:hover {
+  background:#9AC7D9;
+  border-radius: 5px;
+} 
+
+/* Showcase Section */
+
+#showcase {
+  background: #012340 url('../img/showcase.jpg') no-repeat center center/cover;
+  height:100vh;
+  color: #fff;
+}
+
+#showcase .showcaseContent {
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height:100%;
+  padding: 0 2rem;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5)
+}
+
+/* What we do Section */
+
+#whatSection .items {
+  display: flex;
+  padding: 1rem;
+}
+
+#whatSection .items .item {
+  flex:1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#whatSection .items .item i {
+  background: #6B9FBF;
+  padding: 1rem;
+  color: #fff;
+  border-radius: 50%;
+  margin-bottom: .5rem;
+}
+
+/* Who We Are Section */
+
+#whoSection {
+  display: flex;
+}
+
+#whoSection div {
+  flex:1;
+}
+
+#whoSection .whoImage{ 
+  background: url('../img/people.jpg') no-repeat center center/cover;
+}
+
+/* Our Clients Section */
+
+#clientsSection .items {
+  display: flex;
+}
+
+#clientsSection .items img {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+/* Contact Us Section */
+
+#contactSection {
+  display: flex;
+}
+
+#contactSection .contactForm,
+#contactSection .contactMap {
+  flex: 1;
+}
+
+#contactSection .contactForm .formGroup {
+  margin: 0.75rem;
+}
+
+#contactSection .contactForm label {
+  display: block;
+}
+
+#contactSection .contactForm input,
+#contactSection .contactForm textarea  {
+  width: 100%;
+  padding: 0.5rem;
+}
