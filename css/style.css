@@ -15,7 +15,7 @@ a {
 }
 
 p {
-  margin: 0.75rem
+  margin: 0.75rem 0;
 }
 
 /* Utility Classes */
@@ -47,6 +47,16 @@ p {
   line-height: 1.1;
 }
 
+.backgroundLight{ 
+  background: #f4f4f4;
+  color: #2E4559
+
+}
+.backgroundDark{ 
+  background: #2E4559; 
+  color: #f4f4f4
+}
+
 .lead {
   font-size: 1.1rem;
   margin-bottom: 2rem;
@@ -74,6 +84,20 @@ p {
 .paddingY1 { padding: 1.5rem 0; }
 .paddingY2 { padding: 2rem 0; }
 .paddingY3 { padding: 3rem 0; }
+
+.padding1 { padding: 1.5rem }
+.padding2 { padding: 2rem }
+.padding3 { padding: 3rem }
+
+.list {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #6B9FBF solid 1px;
+}
 
 /* Navigation Bar */
 #navigationBar {
@@ -151,4 +175,18 @@ p {
   color: #fff;
   border-radius: 50%;
   margin-bottom: .5rem;
+}
+
+/* Who We Are Section */
+
+#whoSection {
+  display: flex;
+}
+
+#whoSection div {
+  flex:1;
+}
+
+#whoSection .whoImage{ 
+  background: url('../img/people.jpg') no-repeat center center/cover;
 }
