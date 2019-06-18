@@ -190,3 +190,15 @@ p {
 #whoSection .whoImage{ 
   background: url('../img/people.jpg') no-repeat center center/cover;
 }
+
+/* Our Clients Section */
+
+#clientsSection .items {
+  display: flex;
+}
+
+#clientsSection .items img {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
